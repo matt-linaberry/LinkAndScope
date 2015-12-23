@@ -9,10 +9,18 @@
         
         <h2>Isolate Scope with String</h2>
         <isolate-scope-with-string name="{{customer.name}}"></isolate-scope-with-string>
+        
+        <h2>Isolate Scope with Object</h2>
+        <isolate-scope-with-object datasource="customer"></isolate-scope-with-object>
+        
+        <h2>Isolate Scope with Event</h2>
+        <isolate-scope-with-event datasource="customer" action="changeData()"></isolate-scope-with-event> <!-- call something in the controller with the action attribute, see the directive! -->
         <script src="scripts/angular.js"></script>
         <script src="scripts/directivesController.js"></script>
         <script src="sharedScopeDirective.js"></script>
         <script src="isolateScopeDirective.js"></script>
         <script src="isolateScopeWithStringDirective.js"></script>
+        <script src="isolateScopeWithObjectDirective.js"></script>
+        <script src="isolateScopeWithEventDirective.js"></script>
     </body>
 </html>
